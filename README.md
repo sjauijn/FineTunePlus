@@ -15,10 +15,6 @@ Control the volume of every app independently, boost quiet ones up to 4x, route 
 </p>
 
 <p align="center">
-  <strong>English</strong> · <a href="README.zh-CN.md">简体中文</a>
-</p>
-
-<p align="center">
   <img src="assets/screenshot-main.png" alt="FineTune popup showing per-app volume control, multi-device output routing with picker popover, AutoEQ headphone correction, and device-level volume sliders" width="700">
 </p>
 <p align="center">
@@ -102,6 +98,48 @@ That's it. Adjust sliders, route audio, and explore EQ from the menu bar.
 git clone https://github.com/sjauijn/FineTunePlus.git
 cd FineTunePlus
 open FineTune.xcodeproj
+
+In Xcode:
+
+Select the FineTune project in the left sidebar.
+
+Under TARGETS, select FineTune.
+
+Go to Signing & Capabilities.
+
+Disable Automatically manage signing.
+
+Set Signing Certificate to Sign to Run Locally.
+
+Make sure that this signing setting is applied to both the Debug and Release configurations. “Sign to Run Locally” creates an ad hoc code signature tied to that specific build.
+
+Release Build
+In Xcode:
+
+Go to Product → Scheme → Edit Scheme.
+
+Select Run.
+
+Under Build Configuration, set it to Release.
+
+Close the settings window.
+
+Now press Command + B to build the project.
+
+Installing FineTune
+In Xcode, go to:
+
+Product → Show Build Folder in Finder
+
+Then open:
+
+Build/Products/Release/
+You should find:
+
+FineTune.app
+Drag FineTune.app to:
+
+/Applications
 ```
 
 ## Requirements
