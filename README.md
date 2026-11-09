@@ -9,11 +9,9 @@ Control the volume of every app independently, boost quiet ones up to 4x, route 
 <br clear="all"/>
 
 <p align="center">
-  <a href="https://github.com/ronitsingh10/FineTune/releases/latest"><img src="https://img.shields.io/github/v/release/ronitsingh10/FineTune?style=for-the-badge&labelColor=1c1c1e&color=0A84FF&logo=github&logoColor=white" alt="Latest Release"></a>
-  <a href="https://github.com/ronitsingh10/FineTune/releases"><img src="https://img.shields.io/github/downloads/ronitsingh10/FineTune/total?style=for-the-badge&labelColor=1c1c1e&color=3a3a3c" alt="Downloads"></a>
+  <a href="https://github.com/sjauijn/FineTunePlus/releases/latest"><img src="https://img.shields.io/github/v/release/ronitsingh10/FineTune?style=for-the-badge&labelColor=1c1c1e&color=0A84FF&logo=github&logoColor=white" alt="Latest Release"></a>
+  <a href="https://github.com/sjauijn/FineTunePlus/releases"><img src="https://img.shields.io/github/downloads/ronitsingh10/FineTune/total?style=for-the-badge&labelColor=1c1c1e&color=3a3a3c" alt="Downloads"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPLv3-3a3a3c?style=for-the-badge&labelColor=1c1c1e" alt="License: GPL v3"></a>
-  <a href="https://ko-fi.com/ronitsingh10"><img src="https://img.shields.io/badge/Tip_on_Ko--fi-FF5E5B?style=for-the-badge&labelColor=1c1c1e&logo=ko-fi&logoColor=white" alt="Tip on
-  Ko-fi"></a>
   <a href="https://www.apple.com/macos/"><img src="https://img.shields.io/badge/macOS-15%2B-3a3a3c?style=for-the-badge&labelColor=1c1c1e&logo=apple&logoColor=white" alt="macOS 15+"></a>
 </p>
 
@@ -30,13 +28,7 @@ Control the volume of every app independently, boost quiet ones up to 4x, route 
 
 ## Install
 
-**Homebrew** (recommended)
-
-```bash
-brew install --cask finetune
-```
-
-**Manual** — [Download latest release](https://github.com/ronitsingh10/FineTune/releases/latest)
+**Manual** — [Download latest release](https://github.com/sjauijn/FineTunePlus/releases/latest)
 
 ## Quick Start
 
@@ -102,14 +94,14 @@ That's it. Adjust sliders, route audio, and explore EQ from the menu bar.
 ## Contributing
 
 - **Star this repo** — Help others discover FineTune
-- **Report bugs** — [Open an issue](https://github.com/ronitsingh10/FineTune/issues)
+- **Report bugs** — [Open an issue](https://github.com/sjauijn/FineTunePlus/issues)
 - **Contribute code** — See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ### Build from Source
 
 ```bash
-git clone https://github.com/ronitsingh10/FineTune.git
-cd FineTune
+git clone https://github.com/sjauijn/FineTunePlus.git
+cd FineTunePlus
 open FineTune.xcodeproj
 ```
 
@@ -117,13 +109,6 @@ open FineTune.xcodeproj
 
 - macOS 15.0 (Sequoia) or later
 - Audio capture permission (prompted on first launch)
-
-## Support
-
-FineTune is free and open source, forever. If it made your day a little easier, you can buy me a coffee — but genuinely not expected 🙏
-
-[![Buy me a coffee](https://img.shields.io/badge/Buy_me_a_coffee-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/ronitsingh10)
-
 
 ## License
 
