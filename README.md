@@ -113,6 +113,16 @@ Set Signing Certificate to Sign to Run Locally.
 
 Make sure that this signing setting is applied to both the Debug and Release configurations. “Sign to Run Locally” creates an ad hoc code signature tied to that specific build.
 
+Open the Build Settings tab.
+
+In the settings search field, enter:
+
+Enable Hardened Runtime
+Find the setting:
+
+Enable Hardened Runtime (ENABLE_HARDENED_RUNTIME)
+Set it to No for both the Debug and Release configurations.
+
 Release Build
 In Xcode:
 
