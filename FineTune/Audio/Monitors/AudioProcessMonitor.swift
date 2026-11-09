@@ -57,6 +57,15 @@ final class AudioProcessMonitor: AudioProcessMonitoring {
         "corespeech",
     ]
 
+    private static let downstreamProcessorPrefixes: [String] = [
+        "com.viper4mac",
+    ]
+
+    private func isDownstreamProcessor(bundleID: String?) -> Bool {
+        guard let bundleID else { return false }
+        return Self.downstreamProcessorPrefixes.contains(where: { bundleID.hasPrefix($0) })
+    }
+
     /// Returns true if the bundle ID or process name indicates a system daemon that should be filtered
     private func isSystemDaemon(bundleID: String?, name: String) -> Bool {
         // Check bundle ID prefixes
@@ -237,6 +246,8 @@ final class AudioProcessMonitor: AudioProcessMonitoring {
 
                 // Skip system daemons (siri, coreaudio, etc.) - they shouldn't appear in the apps list
                 if isSystemDaemon(bundleID: bundleID, name: name) { continue }
+
+                if isDownstreamProcessor(bundleID: bundleID) { continue }
 
                 // Merge helper process objectIDs into parent app entry
                 if let existing = appsByPID[parentPID] {
